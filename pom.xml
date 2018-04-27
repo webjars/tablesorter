@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>tablesorter</artifactId>
-    <version>2.18.5-SNAPSHOT</version>
+    <version>2.18.4-1-SNAPSHOT</version>
     <name>tablesorter</name>
     <description>WebJar for tablesorter</description>
     <url>http://webjars.org</url>
@@ -47,7 +47,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>2.18.4</upstream.version>
         <upstream.url>https://github.com/Mottie/tablesorter/archive</upstream.url>
-        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
     </properties>
 
     <build>
@@ -87,6 +87,9 @@
                                 </move>
                                 <move todir="${destDir}/css">
                                     <fileset dir="${project.build.directory}/tablesorter-${upstream.version}/css" />
+                                </move>
+                                <move todir="${destDir}/addons">
+                                    <fileset dir="${project.build.directory}/tablesorter-${upstream.version}/addons" />
                                 </move>
                             </target>
                         </configuration>
