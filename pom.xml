@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>tablesorter</artifactId>
-    <version>2.30.3</version>
+    <version>2.30.4-SNAPSHOT</version>
     <name>tablesorter</name>
     <description>WebJar for tablesorter</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>https://github.com/webjars/tablesorter</url>
         <connection>scm:git:https://github.com/webjars/tablesorter.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/tablesorter.git</developerConnection>
-        <tag>tablesorter-2.30.3</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
